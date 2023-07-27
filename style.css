@@ -1,0 +1,72 @@
+html {
+    background-color: #000000;
+    
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-image: url(./images/wallpaper);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.find-btn:hover {
+background-color: #1d1d1d !important;
+}
+
+.is-primary.input:active, .is-primary.input:focus, .is-primary.is-active.input, .is-primary.is-active.textarea, .is-primary.is-focused.input, .is-primary.is-focused.textarea, .is-primary.textarea:active, .is-primary.textarea:focus {
+    box-shadow: 0 0 0 0.125em rgba(0, 0, 0, 0) !important;
+}
+
+/* styling for the jquery autocomplete */
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+  /* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+  * html .ui-autocomplete {
+    height: 200px;
+  }
+
+
+  /* styling for the cards */
+
+  .cardSet-groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .cardSet-group {
+    position: absolute;
+  }
+
+  .cardSet-group[data-status="unknown"] {
+    transform: scale(0);
+  }
+
+  .cardSet-buttons {
+  position: relative;
+  }
+
+#info-button {
+    background: hsl(0, 0%, 100%);
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 80px;
+    cursor: pointer;
+}
+  
+@media only screen and (max-width: 768px) {
+    #info-button {
+        bottom: 92%;
+        right: 20px;
+    }
+}
